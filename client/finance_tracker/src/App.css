@@ -1,0 +1,233 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/* Dashboard container styles */
+.dashboard-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Title */
+.dashboard-container h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+/* Expense card layout */
+.expense-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect for cards */
+.expense-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Header row with description and amount */
+.expense-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+/* Description text */
+.expense-card-header h3 {
+  font-size: 1.1rem;
+  color: #334155;
+  margin: 0;
+}
+
+/* Amount styling */
+.expense-amount {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #16a34a;
+  /* green */
+}
+
+/* Body section */
+.expense-card-body p {
+  font-size: 0.9rem;
+  color: #475569;
+  margin: 0.25rem 0;
+}
+
+/* Light background for the page */
+body {
+  background-color: #030405;
+}
+
+/* Form container styles */
+.form-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  max-width: 500px;
+  margin: 2rem auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect (same as expense cards) */
+.form-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Each field block */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+/* Label text */
+.form-field label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 0.4rem;
+}
+
+/* Shared input + select styling */
+.input {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #1e293b;
+  background-color: #f8fafc;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Focus effect */
+.input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* Submit button */
+.button {
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Button hover and active states */
+.button:hover {
+  background-color: #1d4ed8;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive: make sure it looks good on small screens */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+
+/* Submit button */
+.delete {
+  background-color: #eb2525;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Button hover and active states */
+.delete:hover {
+  background-color: #eb2525;
+}
+
+.delete:active {
+  transform: scale(0.98);
+}
+
+/* Submit button */
+.signOut {
+  background-color: #eb2525;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Button hover and active states */
+.signOut:hover {
+  background-color: #eb2525;
+}
+
+.signOut:active {
+  transform: scale(0.98);
+}
